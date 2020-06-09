@@ -73,7 +73,7 @@ bin/magento setup:config:set --page-cache=redis --page-cache-redis-server=127.0.
 
 As a result of the two example commands, Magento adds lines similar to the following to `<Magento install dir>app/etc/env.php`:
 
-```php?start_inline=1
+```php
 'cache' => [
     'frontend' => [
         'default' => [
@@ -175,9 +175,8 @@ To enable it just run `bin/magento setup:config:set --allow-parallel-generation`
             ]
         ],
         'allow_parallel_generation' => false
-    ],
+    ]
 ```
-
 
 ## Basic verification {#redis-verify}
 
