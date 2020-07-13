@@ -33,14 +33,12 @@ Prior to setting up a local workspace, gather the following credentials and acco
 
    When importing an existing Magento system only, capture the Magento encryption key used to protect your access and data for the Magento database. For details on this key, see [Resolve issues with encryption key].
 
-## Launch a Docker environment
+## Getting started with Magento Cloud Docker
 
-You can use the Docker environment to emulate the {{site.data.var.ece}} Integration and production environments for local development and testing. You need three, essential components: a {{site.data.var.ee}} v2 template, Docker Compose, and {{site.data.var.ece}} `{{site.data.var.ct}}` package.
+You can use the Docker environment to emulate the {{site.data.var.ece}} Integration and production environments for local development and testing. See the following topics for details:
 
--  [Docker architecture and common commands]({{site.baseurl}}/cloud/docker/docker-containers.html)
--  [Launch Docker development environment]({{site.baseurl}}/cloud/docker/docker-config.html)
+-  [Docker architecture and common commands][]
+-  [Launch a Docker environment][]
 
-[config docker]: {{site.baseurl}}/cloud/docker/docker-config.html
-[Magento authentication keys]: {{site.baseurl}}/guides/v2.3/install-gde/prereq/connect-auth.html
-[Set up an account]: {{site.baseurl}}/cloud/before/before-workspace.html#newaccount
-[Resolve issues with encryption key]: {{site.baseurl}}/cloud/trouble/trouble-crypt-key-variable.html
+[Docker architecture and common commands]: {{site.baseurl}}/cloud/docker/docker-containers.html
+[Launch Docker development environment]:  {{site.baseurl}}/cloud/docker/docker-launch-environment.html
