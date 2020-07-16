@@ -15,7 +15,7 @@ redirect_from:
 
    {{site.data.var.mcd-prod}} uses the {{site.data.var.ece}} configuration files to generate the Docker com
    pose configuration file to deploy {{site.data.var.ece}} to a local Docker environment.
-  
+
 -  Standalone configuration file `.magento.docker.yaml`
 
    Standalone configuration supports deployment of {{site.data.var.ee}} and {{site.data.var.ce}} projects to a local Docker environment.
@@ -78,9 +78,9 @@ Start the synchronization daemon | `docker-sync start`
 
 Use the following command to stop and remove the Docker configuration:
 
-   ```bash
-   docker-compose down -v
-   ```
+```bash
+docker-compose down -v
+```
 
 {: .bs-callout-warning}
 This command removes all components of your local Docker instance including containers, networks, volumes, and images except for the persistent database and the `magento-sync` volume. See [Rebuild a clean environment][refresh].
