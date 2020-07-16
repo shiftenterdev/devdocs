@@ -11,10 +11,7 @@ redirect_from:
 
 You can customize Docker configuration using an override configuration file, or dynamically from the command line by adding options to the `ece-docker build:compose` command.
 
-
-## 
-
-Because the `ece-docker build:compose` command overwrites the base configuration, we recommend saving your customizations in an override configuration file. You can use this method to merge multiple custom configurations. See [Docker Docs: Multiple Compose files][].
+The `ece-docker build:compose` command overwrites the base configuration file. If you save customizations in an override configuration file, those changes are applied after the base configuration file is updates. You use this method to merge multiple custom configurations. See [Docker Docs: Multiple Compose files][].
 
 The `docker-compose up` command considers the base `docker-compose.yml` configuration by default. If the `docker-compose.override.yml` file is present, then the override configuration merges with the base configuration.
 
