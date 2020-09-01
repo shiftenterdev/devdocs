@@ -5,6 +5,7 @@
 
 Jekyll::Hooks.register :site, :post_write do |site|
   site.pages.each do |page|
+    next unless page.ext.match? /md|html/
     content = page.to_liquid.to_json
     destination_path = page.destination('_api').sub('.html', '.json')
     destination_dir = File.dirname(destination_path)
