@@ -18,7 +18,7 @@ content_map:
 -
   directory: src/page-builder
   repository: magento/magento2-page-builder-docs
-  branch: master
+  branch: pb_release_notes_1.5.0
   filter: true
 -
   directory: src/page-builder-migration
